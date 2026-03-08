@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marius Portfolio</title>
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+background:linear-gradient(#ffffff,#de7e00);
+}
+
+/* NAVBAR */
+
+.navbar{
+position: sticky;
+top: 0;
+z-index: 9999;
+background:black;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+.logo{
+font-weight:bold;
+}
+
+
+/* MAIN CONTAINER */
+
+.container{
+scroll-margin-top: 80px;
+width:100%;
+max-width:900px;
+margin:auto;
+padding:50px;
+}
+
+
+/* HERO */
+
+.hero{
+scroll-margin-top: 80px;
+    display:flex;
+align-items:center;
+gap:20px;
+}
+
+.profile{
+    scroll-margin-top: 80px;
+width:120px;
+height:120px;
+border-radius:50%;
+border:5px solid #ffffff;
+object-fit:cover;
+transition: transform 0.7s ease, border 0.3s ease;
+
+}
+.profile:hover{
+    scroll-margin-top: 80px;
+border:5px solid #de7e00;
+transform: scale(1.05);
+}
+
+.hero-text h1{
+    scroll-margin-top: 80px;
+font-size:30px;
+}
+
+.hero-text span{
+    scroll-margin-top: 80px;
+color:#de7e00;
+font-size: 20px;
+
+}
+
+.hero-text {
+    scroll-margin-top: 80px;
+font-size:14px;
+margin:10px 0;
+
+color:#000000;
+}
+
+.hero-text p{
+    scroll-margin-top: 80px;
+    color:#545454;
+    font-weight: lighter;
+}
+
+button{
+    scroll-margin-top: 80px;
+margin-top: 20px;
+background:#ffffff;
+border: #de7e00 4px solid;
+padding:8px 15px;
+border-radius:20px;
+font-weight:bold;
+cursor:pointer;
+transition: transform 0.5s ease, background-color 0.5s ease;
+}
+button:hover{
+    scroll-margin-top: 80px;
+    color:white;
+    background-color: #de7e00;
+    transform: scale(1.2);
+}
+
+/* DIVIDER */
+
+.divider{
+margin:25px 0;
+border:2px solid black;
+}
+
+
+/* TITLES */
+
+.title{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.title h2{
+color:#de7e00;
+font-weight: 700;
+}
+
+.line{
+height:3px;
+background:#de7e00;
+flex:1;
+}
+
+
+/* ABOUT */
+
+.about-box{
+    scroll-margin-top: 80px;
+background:#ffffff;
+padding:20px;
+border-radius:20px;
+width:70%;
+margin-top:15px;
+transition: transform 0.5s ease;
+}
+
+.about-box:hover{
+    transform: scale(1.1);
+}
+
+
+/* SKILLS */
+
+.line2{
+height:3px;
+background:#ffffff;
+flex:3;
+}
+
+.skills-title{
+text-align:right;
+color:white;
+font-weight:bold;
+margin-top:30px;
+}
+
+
+.skills-box{
+    scroll-margin-top: 80px;
+background:#ffffff;
+padding:20px;
+width: 70%;
+border-radius:20px;
+margin-top:10px;
+margin-left: auto;
+text-align:center;
+transition: transform 0.5s ease;
+}
+
+.skills-box:hover{
+    scroll-margin-top: 80px;
+    transform: scale(1.1);
+}
+
+
+/* PROJECTS */
+
+.projects-title{
+color:white;
+font-weight:bold;
+margin-top:30px;
+}
+
+.projects{
+display:flex;
+justify-content: center;
+gap:20px;
+flex-wrap: wrap;
+margin-top:10px;
+transition: transform 0.5s ease;
+}
+
+.projects:hover{
+    transform: scale(1.05);
+}
+
+.card{
+text-align:center;
+transition: transform 0.5s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+width:150px;
+height:150px;
+object-fit:cover;
+border: #ffffff 2px solid;
+border-radius:15px;
+transition: transform 0.5s ease;
+}
+
+.label{
+background:white;
+padding:6px;
+border-radius:15px;
+font-size:11px;
+margin-top:5px;
+}
+
+
+/* CONTACT */
+
+.contact-box{
+border:2px solid white;
+text-decoration: none;
+padding:20px;
+border-radius:15px;
+width:250px;
+margin-top:30px;
+color:white;
+transition: transform 0.5s ease;
+}
+
+.contact-box:hover{
+    transform: scale(1.1);
+}
+
+.contact-box p{
+    color: white;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+.footer{
+background:black;
+color:white;
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header id="navbar" class="navbar">
+<div class="logo">MARIUS CANO</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#contacts">Contacts</a>
+</nav>
+</header>
+
+
+<div class="container">
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<img src="https://github.com/Ekaki45/Drawings/blob/main/me.jpg?raw=true" class="profile">
+
+<div class="hero-text">
+<h1>MARIUS <span>| ARTIST</span></h1>
+
+<p>
+A student artist seeking an improvement in illustration
+and character design.
+</p>
+
+<a href="#projects"><button>View Works</button></a>
+
+</div>
+
+</section>
+
+
+<hr class="divider">
+
+
+<!-- ABOUT -->
+<section id="about">
+
+<div class="title">
+<h2>ABOUT ME:</h2>
+<div class="line"></div>
+</div>
+
+<div class="about-box">
+I’m a 20 year old student. Exploring the world through
+digital ink and character design. I create to see what's
+possible.
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+
+<div class="skills-title">SKILLS:</div>
+<div class="line2"></div>
+
+<div class="skills-box">
+
+Design · Character Art · Visual Storytelling  
+Traditional Ink · Graphite · Anatomy
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+<section id = "projects">
+
+<div class="projects-title">PROJECTS:</div>
+
+<div class="projects">
+
+<div class="card">
+<img src="https://github.com/Ekaki45/Drawings/blob/main/superman.png?raw=true">
+<div class="label">SUPERMAN | JAN, 2026</div>
+</div>
+
+<div class="card">
+<img src="https://github.com/Ekaki45/Drawings/blob/main/light.webp?raw=true">
+<div class="label">TOPSY-TURVY LIGHTHOUSE | NOV, 2025</div>
+</div>
+
+<div class="card">
+<img src="https://github.com/Ekaki45/Drawings/blob/main/por.jpg?raw=true">
+<div class="label">SELF-PORTRAIT | JUNE, 2025</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contacts">
+
+<div class="contact-box">
+
+<h3>CONTACTS:</h3>
+
+<p></p><img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/email-envelope-line-white-icon.png" alt="Email" width="20px"> <a href="mailto:itsmarius45@gmail.com">itsmariuss45@gmail.com</a></p>
+<p><img src="https://www.citypng.com/public/uploads/preview/hd-square-white-instagram-logo-icon-png-701751695118869dhkjddwaed.png" alt="Instagram" width="20px"> <a href="https://www.instagram.com/mrsmygcno/" target="_blank">@mrsmygcno</a></p>
+<p><img src="https://www.iconsdb.com/icons/preview/white/twitter-xxl.png" alt="Twitter" width="20px"> <a href="https://twitter.com/urangez" target="_blank">@urangez</a></p>
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div>MARIUS CANO</a></div>
+<div>©2026</div>
+
+</footer>
+
+</body>
+</html>
